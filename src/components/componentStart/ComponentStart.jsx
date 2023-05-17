@@ -4,29 +4,29 @@ import "./ComponentStart.css"
 export default function ComponentStart() {
     return (
         <div className='bg-component'>
-            <main class="gs_main">
+            <main className="gs_main">
              
-                <div class="gs_round">
+                <div className="gs_round">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                <img src="https://pngimg.com/uploads/fitness/fitness_PNG109.png" alt="" class="gs_hero_img" />
-                <div class="gs_heading">
+                <img src="https://pngimg.com/uploads/fitness/fitness_PNG109.png" alt="" className="gs_hero_img" />
+                <div className="gs_heading">
                     <h2>GYM</h2>
                     <h1>KNOCK OUT</h1>
                 </div>
-                <div class="gs_about">
+                <div className="gs_about">
                     <h1>El futuro del fitness está en tus manos.</h1>
                     <p>
-                        <span>Gym</span> <span>Knock Out</span>, un gimnasio versátil que llevará tu físico al siguiente nivel. Entonces, ¿estás listo para sudar y mutar?
+                        <span>Gym</span> <span className='ko-text'>Knock Out</span>, un gimnasio versátil que llevará tu físico al siguiente nivel. Entonces, ¿estás listo para sudar y mutar?
                     </p>
                     <hr />
-                    <div class="gs_button">
-                        <p>Inscribirme</p>
+                    <div className="gs_button">
+                        <button className='gs-btn'>Inscribirme</button>
                     </div>
                 </div>
-                <div class="gs_social">
+                <div className="gs_social">
                     <a href="https://twitter.com/iamutba" target="_blank">
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABjElEQVRIie3Wv0vVURjH8ZdKEojYD9ocHTTE1RYTIxAy3ARRaBcM+hfEWaJoaysaxEGJWhpadBSHEBx0KYWWCkJIM38N537hcvvec7/n3tuSfuDZzvm8z/OcH8/hUv+7WprkcxUPMYAzfMJ7HFaMa8dRnsFtXEuEjmC3BCyPzxjGDUzjAzqrmbzCamxAhe7gIAeaxRGOcYopkQpvliaso7sAeCMCzeIUy1jA42pG22UTvmEyAu0rAC2PJbRVM1vJmbCKB/4u03gC9CVaI0lEzb7gGSZK2Y4lgCdiULiC1wmGRWO4ElSZ/oZwGL7XWmGivtYa8E7zs90XHo6oRv8B+G0taKb5JoNnioLhEfaaAP2hyiuYd7daMYQt/E5ZbY6eC3tcWE80nu0erqeutAUvGoCe4F4qtFz3hVOZ1/ZiMdcINFMv1hKgTzXwwegQ7vQi/hQEHoq0vZiGhO/KjtDAU0r7Ef31QDN1YVb4CNSC/cQb3K0HFNuLWxhED24KneuXcE02hYZyXA/0UhdD5+q+K5z2ztKIAAAAAElFTkSuQmCC" />
                     </a>

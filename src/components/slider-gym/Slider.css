@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+	--color-primary: #D02825;
+	--color-primary-l: hsl(344, 96%, 64%);
+	--color-primary-d: hsl(344, 96%, 44%);
+	--color-text: hsl(0, 0%, 90%);
+	--color-text-d: hsl(0, 0%, 10%);
+	--color-text-shadow: hsl(0, 0%, 74%);
+	--font: "Poppins";
+}
+
+.body {
+	color: var(--color-text);
+	text-shadow: 1px 1px 1px var(--color-text-d);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+p {
+	margin-bottom: 1.5rem;
+}
+p {
+	margin-bottom: 1.5rem;
+}
+
+.nav {
+	margin-top: 6.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+}
+.icon {
+	display: inline-grid;
+	place-items: center;
+	width: 24px;
+	height: 24px;
+	margin: 0.15rem;
+	fill: var(--color-text);
+}
+.icon-text {
+	display: none;
+}
+.button {
+	display: inline-flex;
+	padding: 0.75rem 1rem;
+	border-radius: 2.5rem;
+	font-weight: bold;
+	background: transparent;
+	cursor: pointer;
+}
+.title {
+	line-height: 1.3;
+}
+.subtitle {
+	color: var(--color-primary);
+	font-weight: bold;
+	font-size: 1.2rem;
+	line-height: 1.2;
+}
+[type="radio"] {
+	display: none;
+}
+[type="radio"]:nth-child(1):checked ~ nav .button:nth-child(1),
+[type="radio"]:nth-child(2):checked ~ nav .button:nth-child(2),
+[type="radio"]:nth-child(3):checked ~ nav .button:nth-child(3),
+[type="radio"]:nth-child(4):checked ~ nav .button:nth-child(4) {
+	color: var(--color-text-d);
+	text-shadow: none;
+	background: var(--color-primary);
+}
+[type="radio"]:nth-child(1):checked ~ nav .button:nth-child(1) .icon,
+[type="radio"]:nth-child(2):checked ~ nav .button:nth-child(2) .icon,
+[type="radio"]:nth-child(3):checked ~ nav .button:nth-child(3) .icon,
+[type="radio"]:nth-child(4):checked ~ nav .button:nth-child(4) .icon {
+	fill: var(--color-text-d);
+}
+[type="radio"]:nth-child(1):checked ~ .main .slide:nth-child(1),
+[type="radio"]:nth-child(2):checked ~ .main .slide:nth-child(2),
+[type="radio"]:nth-child(3):checked ~ .main .slide:nth-child(3),
+[type="radio"]:nth-child(4):checked ~ .main .slide:nth-child(4) {
+	opacity: 1;
+	clip-path: circle(150% at top left);
+}
+
+.main {
+	background: linear-gradient(dimgray, black);
+	overflow: hidden;
+	min-height: 100vh;
+}
+.slides {
+	display: flex;
+}
+.slide {
+	position: absolute;
+
+	flex: 1 0 100vw;
+	opacity: 0;
+	clip-path: circle(0 at top left);
+	transition: 0.75s;
+}
+
+.slide:nth-child(1) {
+	background: url("https://images.unsplash.com/photo-1434682772747-f16d3ea162c3?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDUzNTg3NQ&ixlib=rb-1.2.1&q=85")
+		no-repeat left center/cover;
+}
+.slide:nth-child(2) {
+	background: url("https://images.unsplash.com/photo-1574680088814-c9e8a10d8a4d?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDUzNTk0NQ&ixlib=rb-1.2.1&q=85")
+		no-repeat center/cover;
+}
+.slide:nth-child(3) {
+	background: url("https://images.unsplash.com/photo-1534368959876-26bf04f2c947?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDUzNjA0NQ&ixlib=rb-1.2.1&q=85")
+		no-repeat center/cover;
+}
+.slide:nth-child(4) {
+	background: url("https://images.unsplash.com/photo-1618841502792-eb41e817281b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDUzNjM0Mw&ixlib=rb-1.2.1&q=85")
+		no-repeat center/cover;
+}
+.slide__content {
+	padding: 1rem;
+	background: #0009;
+	height: 100vh;
+	color: smoke;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    opacity: 0;
+    animation: fade-in 0.5s linear forwards;
+    animation-delay: 0.2s;
+}
+@media screen and (min-width: 640px) {
+	.icon-text {
+		display: initial;
+	}
+}
+@media screen and (min-width: 768px) {
+	html {
+		font-size: 18px;
+	}
+	.slide__content {
+		padding: 2rem 4rem;
+	}
+	.title {
+		font-size: 2.5rem;
+	}
+}
+@media screen and (min-width: 960px) {
+	.slide__content {
+		padding: 2rem 8rem;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.slide__content {
+		padding: 2rem 12rem;
+	}
+}
