@@ -1,0 +1,117 @@
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    position: relative;
+    width: 100%;
+    text-align: center;
+} 
+ 
+.wh{
+    width: 100%;
+    margin-top: -10px;
+ }
+
+footer .redes {
+    margin-bottom: 20px;
+}
+
+footer .redes a {
+    text-align: center;
+
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+
+
+
+
+a {
+    text-decoration: none;
+  }
+  
+
+
+  
+  .row {
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    margin-left: 0px;
+  }
+  
+
+  
+  h4 {
+    margin-bottom: 0.9375rem;
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  
+
+  .copyright {
+    text-align: center;
+    color: #fff;
+    background-color: rgb(40, 40, 40);
+    padding: 0.6rem 0;
+  }
+
+  .con-img h2{
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--secondary-color);
+  }
+
+  .footerImg {
+    border: 5px solid #1CB698;
+    margin-top: -20px;
+    width: 18%;
+    border-radius: 100%;
+}
+  
+.imgLogo{
+    margin-top: -20px;
+}
+  /* Responsive adjustments */
+  
+  @media screen and (max-width: 768px) {
+    .column {
+      margin: 0.4rem 0;
+      width: 100%;
+      padding: 0;
+    }
+  
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    h4 {
+      font-size: 1.3125rem;
+    }
+  
+    p {
+      font-size: 0.9375rem;
+    }
+    .imgLogo{
+        margin-top: 20px;
+    }
+  
+ 
+  }
+  

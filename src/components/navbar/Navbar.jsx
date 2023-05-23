@@ -25,7 +25,7 @@ export default function Navbar() {
     <div className="contenedor-header">
         <header>
             <div className="logo">
-                <a href="#">GYM WEB</a>
+                <a href="#"> <img src="/img/logoNavbar.png" width={100} alt="" /></a>
             </div>
             <nav id="nav">
                 <ul>

@@ -7,7 +7,7 @@ export default function Coachs() {
             
     <div className="section" id="trainer">
       <h2 className="primary mb">Nuestros entrenadores profesionales</h2>
-      <div className="container flex">
+      <div className="container flex pt-3">
         <div className="trainer">
           <img
             src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/trainer1.jpg"

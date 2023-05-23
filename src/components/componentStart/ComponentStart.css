@@ -160,6 +160,7 @@
 .gs_about h1 {
     color: var(--secondary-color);
     width: 80%;
+    font-size: 30px;
     opacity: 0;
     animation: fade-in 0.5s linear forwards;
     animation-delay: 1s;
