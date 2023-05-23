@@ -1,16 +1,33 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Slider.css"
 
 export default function Slider() {
+    const [selectedOption, setSelectedOption] = useState(1);
 
-
-
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setSelectedOption(prevOption => {
+          if (prevOption === 4) {
+            return 1;
+          } else {
+            return prevOption + 1;
+          }
+        });
+      }, 8000);
+  
+      return () => {
+        clearInterval(interval);
+      };
+    }, []);
+  
     return (
         <div className='body'>
-            <input type="radio" name="x" id="x1" className="hidden"/>
-            <input type="radio" name="x" id="x2" className="hidden" />
-            <input type="radio" name="x" id="x3" className="hidden" />
-            <input type="radio" name="x" id="x4" className="hidden" />
+
+            
+            <input type="radio" name="x" id="x1" className="hidden"  value="1" checked={selectedOption === 1}  onChange={() => setSelectedOption(1)}/>
+            <input type="radio" name="x" id="x2" className="hidden"  value="2" checked={selectedOption === 2}  onChange={() => setSelectedOption(2)}/>
+            <input type="radio" name="x" id="x3" className="hidden"  value="3" checked={selectedOption === 3}  onChange={() => setSelectedOption(3)}/>
+            <input type="radio" name="x" id="x4" className="hidden"  value="4" checked={selectedOption === 4}  onChange={() => setSelectedOption(4)}/>
             <nav className="nav">
                 <label for="x1" className="button">
                     <span className="icon">
