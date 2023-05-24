@@ -31,11 +31,11 @@ export default function Navbar() {
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" >INICIO</a></li>
-                    <li><a href="#sobremi" >NOSOTROS</a></li>
-                    <li><a href="#curriculum" >SITIO WEB PERFECTO</a></li>
-                    <li><a href="#paquetes" >PRECIOS</a></li>
-                    <li><a href="#contacto" >CONTACTO</a></li>
+                    <li><Link to="/">INICIO</Link></li>
+                    <li><Link to="/">GYM</Link></li>
+                    <li><Link to="/">BOX</Link></li>
+                    <li><Link to="/">PRECIOS</Link></li>
+                    <li><Link to="Contacto">CONTACTO</Link></li>
                 </ul>
             </nav>
             <div className="nav-responsive" onClick={mostrarOcultarMenu}>
