@@ -46,6 +46,11 @@ html {
 
   /* SECCION RESPONSIVE */
 @media screen and (max-width:980px) {
+    .paquetes {
+
+        height: 100vh;
+    }
+
 
     .contacto .fila {
         display: block;
@@ -107,4 +112,13 @@ html {
         padding: 10px 0;
     }
 
+}
+
+@media screen and (max-width:700px) {
+
+    .paquetes {
+
+        height: auto;
+    }
+    
 }

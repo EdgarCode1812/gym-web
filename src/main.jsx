@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Contacto from './components/Contacto/Contacto.jsx';
+import Precio from './components/Precios/Precio.jsx';
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "Contacto",
     element: <Contacto />
+  },
+  {
+    path: "Precios",
+    element: <Precio />
   }
 ])
 
