@@ -1,5 +1,6 @@
 import React from 'react'
-import "./ComponentStart.css"
+import "./ComponentStart.css";
+import { Link } from 'react-router-dom';
 
 export default function ComponentStart() {
     return (
@@ -22,8 +23,9 @@ export default function ComponentStart() {
                         <span>Gym</span> <span className='ko-text'>Knock Out</span>, un gimnasio versátil que llevará tu físico al siguiente nivel. Entonces, ¿estás listo para sudar y mutar?
                     </p>
                     <hr />
+                   
                     <div className="gs_button">
-                        <button className='gs-btn'>Inscribirme</button>
+                       <Link to="Contacto"><button className='gs-btn'>Inscribirme</button></Link>
                     </div>
                 </div>
                 <div className="gs_social">

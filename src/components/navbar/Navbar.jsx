@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Navbar.css"
+import { Link } from 'react-router-dom';
+
 
 export default function Navbar() {
     
@@ -25,7 +27,7 @@ export default function Navbar() {
     <div className="contenedor-header">
         <header>
             <div className="logo">
-                <a href="#"> <img src="/img/logoNavbar.png" width={100} alt="" /></a>
+                <Link to="/"> <img src="/img/logoNavbar.png" width={100} alt="" /></Link>
             </div>
             <nav id="nav">
                 <ul>

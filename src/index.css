@@ -14,8 +14,46 @@ html {
 
 
 
+
+
+
+  .float{
+	position:fixed;
+	width:70px;
+	height:70px;
+	bottom:40px;
+	right:40px;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.img-w{
+    width: 50px;
+    margin-top:10px;
+
+}
+
+
+
   /* SECCION RESPONSIVE */
 @media screen and (max-width:980px) {
+
+    .contacto .fila {
+        display: block;
+    }
+
+    .contacto .fila .col {
+        width: 100%;
+    }
 
     .gs_about {
         text-align: center;
