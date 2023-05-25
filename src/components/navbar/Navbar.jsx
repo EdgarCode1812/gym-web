@@ -35,7 +35,7 @@ export default function Navbar() {
                     <li><Link to="/">GYM</Link></li>
                     <li><Link to="/">BOX</Link></li>
                     <li><Link to="/Precios">PRECIOS</Link></li>
-                    <li><Link to="Contacto">CONTACTO</Link></li>
+                    <li><Link to="/Contacto">CONTACTO</Link></li>
                 </ul>
             </nav>
             <div className="nav-responsive" onClick={mostrarOcultarMenu}>

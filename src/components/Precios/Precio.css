@@ -179,6 +179,10 @@ video {
 }
 .img-cheque{
     width: 20px;
+    fill: white;
+}
+.text-start svg{
+    fill: white;
 }
 
 @media (min-width: 40em) {
