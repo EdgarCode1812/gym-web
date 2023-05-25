@@ -43,7 +43,7 @@ export default function Precio() {
                                 </div>
                            
                             </li>
-                            <li className="buy"><a href="https://api.whatsapp.com/send?phone=2711236028&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20paquete%20Basic." target="_blank"><button>Contrata Basic</button></a></li>
+                            <li className="buy"><a href="https://api.whatsapp.com/send?phone=2711236028&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20paquete%20Basic." target="_blank"><button>Inscribirme</button></a></li>
                         </ul>
                     </div>
                     <div className="promo second">
@@ -58,7 +58,7 @@ export default function Precio() {
                                 <p><img src="/img/icons/cheque.png" className='img-cheque' alt="" /> 2 personas solo box $600</p>
                             </div>
                             </li>
-                            <li className="buy"><a href="https://api.whatsapp.com/send?phone=2711236028&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20paquete%20Plus." target="_blank"><button>Contrata Plus</button></a></li>
+                            <li className="buy"><a href="https://api.whatsapp.com/send?phone=2711236028&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20paquete%20Plus." target="_blank"><button>Inscribirme</button></a></li>
                         </ul>
                     </div>
                     <div className="promo third scale">
@@ -74,7 +74,7 @@ export default function Precio() {
                                 <p><img src="/img/icons/cheque.png" className='img-cheque' alt="" /> 1 persona horario controlado  $200</p>
                             </div>
                             </li>
-                            <li className="buy"><a href="https://api.whatsapp.com/send?phone=2711236028&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20paquete%20Premium." target="_blank"><button>Contrata Premium</button></a></li>
+                            <li className="buy"><a href="https://api.whatsapp.com/send?phone=2711236028&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20paquete%20Premium." target="_blank"><button>Inscribirme</button></a></li>
                         </ul>
                     </div>
                 </div>
