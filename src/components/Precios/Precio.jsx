@@ -2,29 +2,13 @@ import React from 'react'
 import "./Precio.css"
 import Navbar from '../navbar/Navbar'
 import Footer from '../Footer/Footer'
+import Bgvideo from '../bg-video/Bg-video'
 
 export default function Precio() {
     return (
         <div>
             <Navbar />
-            <div className="bg-video-wrap">
-                <div className="brightness">
-                    <video autoPlay={true} loop={true} muted={true} src="/video/video-bg3.mp4">
-                    </video>
-                </div>
-
-                <div className="overlay">
-                </div>
-                <div className="center-div text-center">
-                    <div className="margin-top">
-                        <img src="/img/logo.png" width="150px" alt="" />
-                        <p className="pt-5">Nuestros precios</p>
-
-
-                    </div>
-                </div>
-            </div>
-
+            <Bgvideo title="Nuestros Precios" url="/video/video-bg3.mp4"/>
             <div className="section">
 
             <section id="paquetes" className="paquetes">

@@ -32,8 +32,8 @@ export default function Navbar() {
             <nav id="nav">
                 <ul>
                     <li><Link to="/">INICIO</Link></li>
-                    <li><Link to="/">GYM</Link></li>
-                    <li><Link to="/">BOX</Link></li>
+                    <li><Link to="/Gym">GYM</Link></li>
+                    <li><Link to="/Box">BOX</Link></li>
                     <li><Link to="/Precios">PRECIOS</Link></li>
                     <li><Link to="/Contacto">CONTACTO</Link></li>
                 </ul>

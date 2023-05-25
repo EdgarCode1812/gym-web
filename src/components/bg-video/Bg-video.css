@@ -1,0 +1,54 @@
+.size-container {
+    background-color: aqua;
+    height: 800px;
+}
+
+.bg-video-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+}
+
+video {
+    min-width: 100%;
+    min-height: 80vh;
+    position: absolute;
+    object-fit: cover;
+}
+
+.center-div {
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+
+.margin-top {
+    margin-top: 120px;
+    opacity: 0;
+    animation: fade-in 0.5s linear forwards;
+    animation-delay: 0.2s;
+}
+
+.margin-top p{
+    font-size: 55px;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--secondary-color);
+}
+
+.brightness {
+    -webkit-filter: brightness(.6);
+    filter: brightness(.6);
+}
+

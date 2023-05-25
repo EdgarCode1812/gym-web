@@ -1,0 +1,91 @@
+.body-gym {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    background: linear-gradient(160deg, rgb(0, 0, 0) 44%, rgb(50, 50, 53) 90%);
+    padding: 70px 0px 140px 0px;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.wrapper i {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    line-height: 46px;
+    border-radius: 50%;
+    color: #fff;
+    background: linear-gradient(to bottom, #000000, #666565);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5),
+                inset 0px 4px 4px rgba(255,255,255,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+}
+
+.wrapper i:active {
+  transform: scale(1.03);
+}
+
+.arrows {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    transform: translateY(50%);
+    bottom: -20%;
+}
+
+.wrapper .carousel {
+    white-space: nowrap;
+    font-size: 0;
+    overflow: hidden;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+    pointer-events: none;
+}
+
+.carousel img {
+    height: 340px;
+    width: calc(100% / 3);
+    object-fit: cover;
+    margin-left: 14px;
+}
+
+.carousel img:first-child {
+    margin-left: 0;
+}
+
+.tittle h2{
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--secondary-color);
+  }
+@media screen and (max-width: 900px) {
+    .carousel img {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .carousel img {
+        width: 100%;
+    }
+}
