@@ -88,8 +88,8 @@
 .contacto .col .info {
     position: absolute;
     top: 45%;
-    padding: 40px;
-    max-width: 350px;
+    padding: 20px;
+    max-width: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(40, 40, 40);
@@ -128,5 +128,17 @@
        
         left: 0;
         transform: translate(0%, 0%);
+    }
+
+    .contacto .fila {
+        height: 120vh;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+
+    .contacto .fila {
+        height: 170vh;
     }
 }
